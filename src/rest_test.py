@@ -21,3 +21,19 @@ if __name__ == "__main__":
     ip_address = margs.ip_address
     url = "http://" + ip_address + ":" + str(port_number) + "/api/robot/status"
     print("Requesting from " + url)
+    while True:
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            print("Status: " + str(response.status_code))
+            print(json.dumps(response.json()))
+        except requests.exceptions.HTTPError as errh:
+            print("Status: " + str(response.status_code))
+            print(json.dumps(response.json()))
+        except requests.exceptions.ConnectionError as errc:
+            print('{"Message": "Connection Error"}')
+        except requests.exceptions.Timeout as errt:
+            print('{"Message": "Request Timeout"}')
+        except requests.exceptions.RequestException as err:
+            print('{"Message": "Request Exception"}')
+        time.sleep(1)
