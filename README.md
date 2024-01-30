@@ -8,8 +8,11 @@
 
 - Linux distro
 - ROS
+- Flask
+- Flask-RESTful
+- requests
 
-- This code has been run on Ubuntu 20.04 LTS ROS Noetic.
+- Install the prerequisites and packages before proceeding. This code has been run on Ubuntu 20.04 LTS ROS Noetic.
 
 ## Install Dependent ROS Packages
 
