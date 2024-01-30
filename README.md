@@ -38,7 +38,8 @@ $ sudo apt install ros-noetic-turtlebot3
 $ roscore
 ```
 
-- Run SLAM node. The default SLAM method is Gmapping. Please use the proper keyword among burger, waffle, waffle_pi for the TURTLEBOT3_MODEL parameter.
+### Run SLAM node
+- The default SLAM method is Gmapping. Please use the proper keyword among burger, waffle, waffle_pi for the TURTLEBOT3_MODEL parameter.
 ```
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch
@@ -52,7 +53,7 @@ $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
-- Save the map
+### Save the map
 ```
 $ rosrun map_server map_saver -f ~/map
 ```
@@ -76,6 +77,9 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 
 - Click the 2D Pose Estimate button in the RViz menu.
 - Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
+- Launch keyboard teleoperation node to precisely locate the robot on the map.
+- Move the robot back and forth a bit to collect the surrounding environment information and narrow down the estimated location of the TurtleBot3 on the map which is displayed with tiny green arrows.
+- Terminate the keyboard teleoperation node by entering Ctrl + C to the teleop node terminal in order to prevent different cmd_vel values are published from multiple nodes during Navigation.
 
 ### Set Navigation Goal
 
