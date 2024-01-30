@@ -23,6 +23,30 @@ $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
   ```
+## Install Turtlebot3 Packages
 
+```
+$ sudo apt install ros-noetic-dynamixel-sdk
+$ sudo apt install ros-noetic-turtlebot3-msgs
+$ sudo apt install ros-noetic-turtlebot3
+```
 
+## Create a Map using SLAM
+
+- Run ROS environment
+```
+$ roscore
+```
+
+- Run SLAM node. The default SLAM method is Gmapping.
+```
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch
+```
+- Run the Teleop node 
+
+```
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
 
