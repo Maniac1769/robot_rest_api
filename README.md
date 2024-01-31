@@ -133,7 +133,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 $ git clone https://github.com/Ansh-Saraiya/robot_rest_api.git
 $ cd ..
 $ catkin_make
-$ roslaunch robot_rest_api rest_server.launch
+$ roslaunch robot_rest_api rest_status.launch
 ```
 
 ## Run the test script
