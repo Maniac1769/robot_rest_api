@@ -48,6 +48,13 @@ $ roscore
 ```
 
 ### Run SLAM node
+
+```
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+- Open the gazebo world using above command.
+![Gazebo](/home/ansh/Pictures/gazebp.png)
+
 - The default SLAM method is Gmapping. Please use the proper keyword among burger, waffle, waffle_pi for the TURTLEBOT3_MODEL parameter.
 ```
 $ export TURTLEBOT3_MODEL=burger
