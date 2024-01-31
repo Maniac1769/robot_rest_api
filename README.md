@@ -122,6 +122,9 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 ### Estimate Initial Pose
 
 - Click the 2D Pose Estimate button in the RViz menu.
+
+![2d_pose_button](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/2d_pose.png)
+
 - Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
 - Launch keyboard teleoperation node to precisely locate the robot on the map.
 - Move the robot back and forth a bit to collect the surrounding environment information and narrow down the estimated location of the TurtleBot3 on the map which is displayed with tiny green arrows.
@@ -130,6 +133,9 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 ### Set Navigation Goal
 
 - Click the 2D Nav Goal button in the RViz menu.
+
+![2d_nav_button](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/2d_nav.png)
+
 - Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing.
 
 ## Run the REST API
