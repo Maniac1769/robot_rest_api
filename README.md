@@ -79,13 +79,15 @@ $ roscore
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 - Open the gazebo world using above command.
-![Gazebo](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/gazebo.png)
+
+![Gazebo World](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/gazebo.png)
 
 - The default SLAM method is Gmapping. Please use the proper keyword among burger, waffle, waffle_pi for the TURTLEBOT3_MODEL parameter.
 ```
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 ```
+![SLAM node](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/slam.png)
 
 - Once SLAM node is successfully up and running, TurtleBot3 will be exploring unknown area of the map using teleoperation. It is important to avoid vigorous movements such as changing the linear and angular speed too quickly. When building a map using the TurtleBot3, it is a good practice to scan every corner of the map.
 
@@ -94,6 +96,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
+![Teleop node](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/teleop.png)
 
 ### Save the map
 ```
@@ -114,6 +117,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
+![Navigation node](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/navigation.png)
 
 ### Estimate Initial Pose
 
@@ -143,6 +147,9 @@ $ roslaunch robot_rest_api rest_status.launch
 $ cd robot_rest_api
 $ python src/rest_test.py
 ```
+![Navigation Status](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/status.png)
+
+![Goal Reached](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/goal_reached.png)
 
 ## References
 
