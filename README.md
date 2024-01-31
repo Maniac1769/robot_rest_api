@@ -2,7 +2,13 @@
 
 ## Description
 
-- This repository describes how to use REST API to display navigation status of the Turtlebot3 which is published on the /move_base/status topic.
+This repository describes how to use REST API to display navigation status of the Turtlebot3 which is published on the /move_base/status topic.
+
+TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping. The goal of TurtleBot3 is to dramatically reduce the size of the platform and lower the price without having to sacrifice its functionality and quality, while at the same time offering expandability. The TurtleBot3 can be customized into various ways depending on how you reconstruct the mechanical parts and use optional parts such as the computer and sensor.
+
+For this task, the Flask REST API was used. Flask is a web framework that allows developers to build lightweight web applications quickly and easily with Flask Libraries. 
+
+Flask-RESTful is an extension for Flask that adds support for quickly building REST APIs. It is a lightweight abstraction that works with your existing ORM/libraries. Flask-RESTful encourages best practices with minimal setup.
 
 ## Prerequisites
 
