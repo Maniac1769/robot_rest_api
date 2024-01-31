@@ -58,12 +58,32 @@ $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
   ```
-## Install Turtlebot3 Packages
 
+## Install Turtlebot3
+
+Before installing Turtlebot3, make sure to update your packages.
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
 ```
 $ sudo apt install ros-noetic-dynamixel-sdk
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-turtlebot3
+```
+This will install the core packages of turtlebot3.
+
+Then, open bashrc as follows.
+```
+cd 
+gedit .bashrc
+```
+Add the following to the end of bashrc.
+```
+source /opt/ros/noetic/setup.bash
+source /home/ansh/catkin_ws/devel/setup.bash
+export TURTLEBOT3_MODEL=waffle
+export SVGA_VGPU10=0
 ```
 
 ## Creating Map using SLAM
