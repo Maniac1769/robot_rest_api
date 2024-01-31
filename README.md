@@ -134,7 +134,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 
 - Click the 2D Nav Goal button in the RViz menu.
 
-![2d_nav_button](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/2d_nav.png)
+  ![2d_nav_button](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/2d_nav.png)
 
 - Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing.
 
