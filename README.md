@@ -123,7 +123,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 
 - Click the 2D Pose Estimate button in the RViz menu.
 
-![2d_pose_button](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/2d_pose.png)
+  ![2d_pose_button](https://github.com/Ansh-Saraiya/robot_rest_api/blob/master/images/2d_pose.png)
 
 - Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
 - Launch keyboard teleoperation node to precisely locate the robot on the map.
