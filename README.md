@@ -81,7 +81,7 @@ gedit .bashrc
 Add the following to the end of bashrc.
 ```
 source /opt/ros/noetic/setup.bash
-source /home/ansh/catkin_ws/devel/setup.bash
+source /path_to_catkin_ws/devel/setup.bash
 export TURTLEBOT3_MODEL=waffle
 export SVGA_VGPU10=0
 ```
