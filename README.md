@@ -10,6 +10,32 @@ For this task, the Flask REST API was used. Flask is a web framework that allows
 
 Flask-RESTful is an extension for Flask that adds support for quickly building REST APIs. It is a lightweight abstraction that works with your existing ORM/libraries. Flask-RESTful encourages best practices with minimal setup.
 
+- The REST API server serves the GET endpoint /api/robot/status locally on port 7201.
+- The API server communicates with ROS and pulls the status information from the /move_base/status topic.
+- When called, the REST API endpoint provides a response containing the status and text fields from the /move_base/status topic. If the topic is not available, the REST API calls an error out with a 400 code and a Bad request message.
+1. Status: 200 OK
+```
+Example 1
+{
+“status”: 3
+“text”: “Goal reached.”
+}
+Example 2
+{
+“status”: 1
+“text”: “This goal has been accepted by the
+simple action server”
+}
+```
+2. Status: 400 Bad request
+```
+Example
+{
+“message”: “Invalid status value”
+}
+```
+- The test python script polls the above REST API endpoint at a fixed frequency of 1Hz and prints the response to the console.
+
 ## Prerequisites
 
 - Linux distro
