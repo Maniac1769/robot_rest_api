@@ -175,7 +175,7 @@ $ python src/rest_test.py
 ```
 ![Navigation Status](https://github.com/Maniac1769/robot_rest_api/blob/master/images/status.png)
 
-![Goal Reached](https://github.com/Maniac1769nsh-Saraiya/robot_rest_api/blob/master/images/goal_reached.png)
+![Goal Reached](https://github.com/Maniac1769/robot_rest_api/blob/master/images/goal_reached.png)
 
 ## References
 
